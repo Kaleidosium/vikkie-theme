@@ -1,0 +1,26 @@
+{
+  "name": "vikkie-theme",
+  "displayName": "Vikkie!!! Theme",
+  "description": "Theme based on Vikkie by luavixen",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.91.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Vikkie!!! Dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/vikkie-color-theme-dark.json"
+      },
+      {
+        "label": "Vikkie!!! Light",
+        "uiTheme": "vs",
+        "path": "./themes/vikkie-color-theme-light.json"
+      }
+    ]
+  }
+}
