@@ -1,6 +1,6 @@
 # vikkie-theme
 
-![Vikkie Logo](https://foxgirl.dev/vikkie/vikkielogo-vikkie.85c5f1f7.png)
+![Vikkie Logo](./images/vikkie.png)
 
 A VSCode theme based on [luavixen](https://foxgirl.dev/)'s fursona [Vikkie](https://foxgirl.dev/vikkie/)!!!
 

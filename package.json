@@ -1,12 +1,14 @@
 {
   "name": "vikkie-theme",
   "displayName": "Vikkie!!! Theme",
-  "description": "Theme based on Vikkie by luavixen",
+  "description": "A VSCode theme based on luavixen's fursona Vikkie!!!",
+  "icon": "images/vikkie-icon.png",
+  "publisher": "atomicnumberphi",
   "repository": {
     "type": "git",
     "url": "https://github.com/Kaleidosium/vikkie-theme.git"
   },
-  "version": "0.0.1",
+  "version": "1.0.1",
   "engines": {
     "vscode": "^1.91.0"
   },
