@@ -1,10 +1,16 @@
-# vikkie-theme
+# Vikkie!!! Theme
 
 ![Vikkie Logo](./images/vikkie.png)
 
 A VSCode theme based on [luavixen](https://foxgirl.dev/)'s fursona [Vikkie](https://foxgirl.dev/vikkie/)!!!
 
 Made for luavixen's Birthday.
+
+## Screenshots
+
+![Screenshot of Dark theme](./images/dark.png)
+
+![Screenshot of Light theme](./images/light.png)
 
 ## Color Summary
 
