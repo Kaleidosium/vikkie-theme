@@ -1,19 +1,24 @@
 {
   "name": "vikkie-theme",
   "displayName": "Vikkie!!! Theme",
-  "description": "A VSCode theme based on luavixen's fursona Vikkie!!!",
+  "description": "A purple VSCode theme based on luavixen's fursona Vikkie!!!",
   "icon": "images/vikkie-icon.png",
   "publisher": "atomicnumberphi",
   "repository": {
     "type": "git",
     "url": "https://github.com/Kaleidosium/vikkie-theme.git"
   },
-  "version": "1.0.2",
+  "version": "1.0.3",
   "engines": {
     "vscode": "^1.91.0"
   },
   "categories": [
     "Themes"
+  ],
+  "keywords": [
+    "purple",
+    "color-theme",
+    "theme"
   ],
   "contributes": {
     "themes": [

@@ -4,6 +4,10 @@ All notable changes to the "vikkie-theme" extension will be documented in this f
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
+## 1.0.3
+
+- Modify descriptions for discoverability
+
 ## 1.0.2
 
 - Update README.md with Theme Screenshots

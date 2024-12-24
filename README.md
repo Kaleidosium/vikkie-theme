@@ -2,7 +2,7 @@
 
 ![Vikkie Logo](./images/vikkie.png)
 
-A VSCode theme based on [luavixen](https://foxgirl.dev/)'s fursona [Vikkie](https://foxgirl.dev/vikkie/)!!!
+A purple VSCode theme based on [luavixen](https://foxgirl.dev/)'s fursona [Vikkie](https://foxgirl.dev/vikkie/)!!!
 
 Made for luavixen's Birthday.
 
