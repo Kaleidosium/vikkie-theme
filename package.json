@@ -8,7 +8,14 @@
     "type": "git",
     "url": "https://github.com/Kaleidosium/vikkie-theme.git"
   },
-  "version": "1.0.3",
+  "version": "2.0.0",
+  "packageManager": "pnpm@12.21.0",
+  "scripts": {
+    "build": "pnpm dlx @vscode/vsce package --no-dependencies",
+    "audit": "node scripts/audit.mjs",
+    "test": "node --test scripts/tooling.test.mjs",
+    "vscode:prepublish": "pnpm run audit"
+  },
   "engines": {
     "vscode": "^1.91.0"
   },
@@ -33,5 +40,8 @@
         "path": "./themes/vikkie-color-theme-light.json"
       }
     ]
+  },
+  "devDependencies": {
+    "culori": "^4.0.2"
   }
 }

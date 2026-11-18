@@ -2,9 +2,13 @@
 
 ![Vikkie Logo](./images/vikkie.png)
 
-A purple VSCode theme based on [luavixen](https://foxgirl.dev/)'s fursona [Vikkie](https://foxgirl.dev/vikkie/)!!!
+This purple VS Code theme is based on [luavixen](https://foxgirl.dev/)'s fursona [Vikkie](https://foxgirl.dev/vikkie/)!!! It was made for luavixen's birthday.
 
-Made for luavixen's Birthday.
+The dark and light themes support semantic highlighting and color VS Code's tabs, floating panels and chat windows. They use Vikkie's reference sheet colors, with extra greens for the terminal.
+
+## Installation
+
+Install [Vikkie!!! Theme](https://marketplace.visualstudio.com/items?itemName=atomicnumberphi.vikkie-theme) from the VS Code Marketplace. Open the Command Palette and run **Preferences: Color Theme**, then choose **Vikkie!!! Dark** or **Vikkie!!! Light**.
 
 ## Screenshots
 
@@ -12,103 +16,168 @@ Made for luavixen's Birthday.
 
 ![Screenshot of Light theme](./images/light.png)
 
-## Color Summary
+## Color summary
+
+### Reference sheet palette
+
+These swatches come from Vikkie's reference sheet. The theme adjusts them for light and dark backgrounds.
+
+| Swatch | Base color | Used for |
+| --- | --- | --- |
+| Fur White | `#F4EEFF` | Dark text, light editor background, neutral ramp |
+| Fur Purple | `#916CDB` | Selections |
+| Hair Yellow | `#F1E8B2` | Dark strings, search highlights |
+| Blush | `#D9C0BA` | Bracket pairs |
+| Mauve | `#C298C2` | Comments |
+| Violet | `#9750D1` | Buttons, badges, focus, active tabs |
+| Ink Plum | `#3B2243` | Dark editor background, light text, neutral ramp |
+| Sock Purple | `#5B3095` | Light types |
+| Eye Teal | `#22CED0` | Functions, success, added lines |
+| Deep Teal | `#0F656E` | Light functions |
+| Sweater Blue | `#66A5E2` / `#B0C8F3` | Info, parameters, properties |
+| Crosshair Red | `#ED0C3D` | Errors, deletions, keywords |
+| Bell Gold | `#E1A665` | Warnings, modified files, numbers |
+| Implant Mint | `#7B9E9A` | Bracket pairs |
+
+The audit checks main and secondary text, syntax colors and colored terminal text against their default backgrounds. Each must reach a contrast ratio of 4.5:1. Input, checkbox and dropdown borders must reach 3:1, as must keyboard focus rings on selected rows. The themes use italics for comments.
 
 ### Dark
 
-**Background Colors**
+#### Background colors
 
-- Dark Purple (Main Background): `#322544`
-- Darker Purple (Sidebar): `#2A1E3A`
-- Darkest Purple (Activity Bar): `#201729`
+- Title bar, activity bar and status bar: `#260F2D`
+- Sidebar, panels and tabs: `#2E1635`
+- Editor: `#3B2243`
+- Widgets (Hover, Suggest, Menus): `#452D4E`
+- Border: `#4C3556`
+- Control Border (Inputs, Checkboxes): `#8A7A96`
 
-**Text Colors**
+#### Text colors
 
-- Light Gray (Main Text): `#E1E1E6`
-- Muted Gray (Inactive Text): `#6A6D77`
+- Main Text: `#F4EEFF`
+- Secondary Text: `#B7ACC4`
+- Muted Text (Line Numbers, Placeholders): `#81708E`
 
-**Accent Colors**
+#### Accent colors
 
-- Bright Red: `#FF6F6F`
-- Light Yellow: `#f1e8b2`
-- Soft Purple: `#A66BB8`
-- Cyan: `#22ced0`
-- Light Blue: `#66a5e2`
+- Accent (Buttons, Badges): `#9750D1`
+- Accent Line (Active Tab, Cursor): `#B988E8`
+- Accent Text & Focus Ring (Links, Matches, Keyboard Focus): `#D0ABF5`
+- Selection: `#A76BDC5C` (with alpha)
+- Search Highlight: `#F1E8B2`
 
-**UI Element Colors**
+#### Status colors
 
-- Highlight Purple: `#4A3E5A`
-- Selection Purple: `#A66BB8AA` (with alpha)
-- Border Color: `#4A3E5A`
+- Success / Added: `#22CED0`
+- Error / Deleted: `#FD7579`
+- Warning / Modified: `#E1A665`
+- Info: `#66A5E2`
 
-**Syntax Highlighting Colors**
+#### Syntax highlighting colors
 
-- String: `#AEECEF`
-- Numeric: `#FF8B91`
-- Comment: `#D1B8F3`
-- Keyword: `#FF6F6F`
+- Keyword, Operator, Regex & Escape: `#FD6C82`
 - Function: `#22CED0`
-- Variable: `#66A5E2`
-- Type: `#f4eeff`
+- String: `#F1E8B2`
+- Number & Constant: `#E1A665`
+- Type & Class: `#BEACFF`
+- Parameter: `#66A5E2` (italic)
+- Property: `#B0C8F3`
+- Comment: `#B995BE` (italic)
+- Punctuation: `#BEB3CA`
+- Bracket Pairs: `#A8DDD7` `#DEA99C` `#C0B4D6` (repeating)
 
-**Terminal Colors**
+#### Terminal colors
 
-- ANSI Black: `#100e23`
-- ANSI Red: `#ff5458`
-- ANSI Green: `#62d196`
-- ANSI Yellow: `#ffb378`
-- ANSI Blue: `#65b2ff`
-- ANSI Magenta: `#906cff`
-- ANSI Cyan: `#63f2f1`
-- ANSI White: `#a6b3cc`
+- ANSI Black: `#1F0925`
+- ANSI Red: `#FD7579`
+- ANSI Green: `#63D99B`
+- ANSI Yellow: `#E1A665`
+- ANSI Blue: `#66A5E2`
+- ANSI Magenta: `#BEACFF`
+- ANSI Cyan: `#22CED0`
+- ANSI White: `#DBD3E7`
 
 ### Light
 
-**Background Colors**
+#### Background colors
 
-- Light (Main Background): `#F8F5FF`
-- Light Purple (Sidebar): `#F1E8FF`
-- Soft Purple (Activity Bar): `#A66BB8`
+- Title bar, activity bar, status bar, sidebar, panels and tabs: `#E8E1F3`
+- Editor: `#F4EEFF`
+- Widgets (Hover, Suggest, Menus): `#FBF9FF`
+- Border: `#DBD3E7`
+- Control Border (Inputs, Checkboxes): `#8B7B98`
 
-**Text Colors**
+#### Text colors
 
-- Dark Purple (Main Text): `#2A1E3A`
-- Muted Gray (Inactive Text): `#6A6D77`
+- Main Text: `#3B2243`
+- Secondary Text: `#634E6E`
+- Muted Text (Line Numbers, Placeholders): `#90809C`
 
-**Accent Colors**
+#### Accent colors
 
-- Bright Red: `#FF6F6F`
-- Deep Purple: `#805592`
-- Soft Purple: `#A66BB8`
-- Cyan: `#22A0A1`
-- Blue: `#2B76B9`
+- Accent (Buttons, Badges, Active Tab, Cursor): `#9750D1`
+- Accent Text & Focus Ring (Links, Matches, Keyboard Focus): `#7B43AB`
+- Selection: `#A76BDC47` (with alpha)
+- Search Highlight: `#E1A665` / `#F1E8B2` (with alpha)
 
-**UI Element Colors**
+#### Status colors
 
-- Highlight Purple: `#E8E1F5`
-- Selection Purple: `#A66BB855` (with alpha)
-- Border Color: `#E8E1F5`
+- Success / Added: `#067072`
+- Error / Deleted: `#C30F32`
+- Warning / Modified: `#905806`
+- Info: `#1367AB`
 
-**Syntax Highlighting Colors**
+#### Syntax highlighting colors
 
-- String: `#22A0A1`
-- Numeric: `#D14045`
-- Comment: `#9B7FA8`
-- Keyword: `#A66BB8`
-- Function: `#22A0A1`
-- Variable: `#2B76B9`
-- Type: `#322544`
+- Keyword, Operator, Regex & Escape: `#C71E44`
+- Function: `#0F656E`
+- String: `#7A6002`
+- Number & Constant: `#744400`
+- Type & Class: `#5B3095`
+- Parameter: `#004F77` (italic)
+- Property: `#5065B6`
+- Comment: `#7B5D86` (italic)
+- Punctuation: `#634E6E`
+- Bracket Pairs: `#1E514D` `#663A30` `#554967` (repeating)
 
-**Terminal Colors**
+#### Terminal colors
 
-- ANSI Black: `#2A1E3A`
-- ANSI Red: `#FF6F6F`
-- ANSI Green: `#059669`
-- ANSI Yellow: `#D97706`
-- ANSI Blue: `#3B82F6`
-- ANSI Magenta: `#A66BB8`
-- ANSI Cyan: `#06B6D4`
-- ANSI White: `#E8E1F5`
+- ANSI Black: `#3B2243`
+- ANSI Red: `#9F0526`
+- ANSI Green: `#005A36`
+- ANSI Yellow: `#714402`
+- ANSI Blue: `#03508A`
+- ANSI Magenta: `#6E2CA0`
+- ANSI Cyan: `#055758`
+- ANSI White: `#BDB2CA`
+
+## Development
+
+Edit the theme JSON files in `themes/` directly. Install development dependencies with `pnpm install`.
+
+- `pnpm run audit` checks contrast, focus rings, accents, bracket colors, italic comments and syntax color separation.
+- `pnpm test` runs the audit's regression tests.
+- `pnpm build` creates `vikkie-theme-<version>.vsix` in the project root and runs the theme audit before packaging.
+
+The audit uses [Culori](https://culorijs.org/) for color calculations. It compares eight syntax colors in simulations of protanopia, deuteranopia and tritanopia. It multiplies each pair's OKLab distance by 100 and requires a result of at least 3.8.
+
+Use `pnpm run audit` to check the themes. The shorter `pnpm audit` command checks dependencies for vulnerabilities.
+
+## Publishing an update
+
+1. Increase `version` in `package.json` above the published version and update `CHANGELOG.md`. Keep the existing `name` and `publisher`.
+2. Install dependencies, run the tests and package the extension:
+
+   ```sh
+   pnpm install --frozen-lockfile
+   pnpm test
+   pnpm build
+   ```
+
+3. In VS Code's Extensions view, open the **…** menu and choose **Install from VSIX…**. Install the package and check both themes.
+4. Open the [publisher dashboard](https://marketplace.visualstudio.com/manage/publishers/atomicnumberphi) and find **Vikkie!!! Theme**. Choose **Update** from its **…** menu and upload the `.vsix`.
+
+Packaging runs the theme audit before creating the `.vsix`. The package excludes audit scripts and development dependencies.
 
 ## License
 
