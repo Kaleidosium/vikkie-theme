@@ -4,6 +4,10 @@ All notable changes to the "vikkie-theme" extension will be documented in this f
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
+## 2.0.1
+
+- Setup OIDC Trusted Publishing
+
 ## 2.0.0
 
 - Updated the dark and light palettes, screenshots and color documentation.

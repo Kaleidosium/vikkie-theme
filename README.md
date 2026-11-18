@@ -22,22 +22,22 @@ Install [Vikkie!!! Theme](https://marketplace.visualstudio.com/items?itemName=at
 
 These swatches come from Vikkie's reference sheet. The theme adjusts them for light and dark backgrounds.
 
-| Swatch | Base color | Used for |
-| --- | --- | --- |
-| Fur White | `#F4EEFF` | Dark text, light editor background, neutral ramp |
-| Fur Purple | `#916CDB` | Selections |
-| Hair Yellow | `#F1E8B2` | Dark strings, search highlights |
-| Blush | `#D9C0BA` | Bracket pairs |
-| Mauve | `#C298C2` | Comments |
-| Violet | `#9750D1` | Buttons, badges, focus, active tabs |
-| Ink Plum | `#3B2243` | Dark editor background, light text, neutral ramp |
-| Sock Purple | `#5B3095` | Light types |
-| Eye Teal | `#22CED0` | Functions, success, added lines |
-| Deep Teal | `#0F656E` | Light functions |
-| Sweater Blue | `#66A5E2` / `#B0C8F3` | Info, parameters, properties |
-| Crosshair Red | `#ED0C3D` | Errors, deletions, keywords |
-| Bell Gold | `#E1A665` | Warnings, modified files, numbers |
-| Implant Mint | `#7B9E9A` | Bracket pairs |
+| Swatch        | Base color            | Used for                                         |
+| ------------- | --------------------- | ------------------------------------------------ |
+| Fur White     | `#F4EEFF`             | Dark text, light editor background, neutral ramp |
+| Fur Purple    | `#916CDB`             | Selections                                       |
+| Hair Yellow   | `#F1E8B2`             | Dark strings, search highlights                  |
+| Blush         | `#D9C0BA`             | Bracket pairs                                    |
+| Mauve         | `#C298C2`             | Comments                                         |
+| Violet        | `#9750D1`             | Buttons, badges, focus, active tabs              |
+| Ink Plum      | `#3B2243`             | Dark editor background, light text, neutral ramp |
+| Sock Purple   | `#5B3095`             | Light types                                      |
+| Eye Teal      | `#22CED0`             | Functions, success, added lines                  |
+| Deep Teal     | `#0F656E`             | Light functions                                  |
+| Sweater Blue  | `#66A5E2` / `#B0C8F3` | Info, parameters, properties                     |
+| Crosshair Red | `#ED0C3D`             | Errors, deletions, keywords                      |
+| Bell Gold     | `#E1A665`             | Warnings, modified files, numbers                |
+| Implant Mint  | `#7B9E9A`             | Bracket pairs                                    |
 
 The audit checks main and secondary text, syntax colors and colored terminal text against their default backgrounds. Each must reach a contrast ratio of 4.5:1. Input, checkbox and dropdown borders must reach 3:1, as must keyboard focus rings on selected rows. The themes use italics for comments.
 
@@ -162,22 +162,6 @@ Edit the theme JSON files in `themes/` directly. Install development dependencie
 The audit uses [Culori](https://culorijs.org/) for color calculations. It compares eight syntax colors in simulations of protanopia, deuteranopia and tritanopia. It multiplies each pair's OKLab distance by 100 and requires a result of at least 3.8.
 
 Use `pnpm run audit` to check the themes. The shorter `pnpm audit` command checks dependencies for vulnerabilities.
-
-## Publishing an update
-
-1. Increase `version` in `package.json` above the published version and update `CHANGELOG.md`. Keep the existing `name` and `publisher`.
-2. Install dependencies, run the tests and package the extension:
-
-   ```sh
-   pnpm install --frozen-lockfile
-   pnpm test
-   pnpm build
-   ```
-
-3. In VS Code's Extensions view, open the **…** menu and choose **Install from VSIX…**. Install the package and check both themes.
-4. Open the [publisher dashboard](https://marketplace.visualstudio.com/manage/publishers/atomicnumberphi) and find **Vikkie!!! Theme**. Choose **Update** from its **…** menu and upload the `.vsix`.
-
-Packaging runs the theme audit before creating the `.vsix`. The package excludes audit scripts and development dependencies.
 
 ## License
 
