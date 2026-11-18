@@ -2,11 +2,13 @@
 
 ![Vikkie Logo](./images/vikkie.png)
 
-A purple VSCode theme based on [luavixen](https://foxgirl.dev/)'s fursona [Vikkie](https://foxgirl.dev/vikkie/)!!!
+This purple VS Code theme is based on [luavixen](https://foxgirl.dev/)'s fursona [Vikkie](https://foxgirl.dev/vikkie/)!!! It was made for luavixen's birthday.
 
-Made for luavixen's Birthday.
+The dark and light themes support semantic highlighting and color VS Code's tabs, floating panels and chat windows. They use Vikkie's reference sheet colors, with extra greens for the terminal.
 
-Every color is built from Vikkie's reference sheet (the terminal's greens are the one exception, since the sheet has no green). It supports VS Code's modern UI (floating panels, connected tabs, frosted-glass menus) and semantic highlighting.
+## Installation
+
+Install [Vikkie!!! Theme](https://marketplace.visualstudio.com/items?itemName=atomicnumberphi.vikkie-theme) from the VS Code Marketplace. Open the Command Palette and run **Preferences: Color Theme**, then choose **Vikkie!!! Dark** or **Vikkie!!! Light**.
 
 ## Screenshots
 
@@ -14,45 +16,49 @@ Every color is built from Vikkie's reference sheet (the terminal's greens are th
 
 ![Screenshot of Light theme](./images/light.png)
 
-## Color Summary
+## Color summary
 
-### Reference Sheet Palette
+### Reference sheet palette
 
-| Swatch      | Hex       | Used for                                              |
-| ----------- | --------- | ----------------------------------------------------- |
-| Fur White   | `#F4EEFF` | Dark text, Light editor background, neutral ramp      |
-| Fur Purple  | `#916CDB` | Selections                                            |
-| Hair Yellow | `#F1E8B2` | Dark strings, search highlights                       |
-| Blush       | `#D9C0BA` | Bracket pairs                                         |
-| Mauve       | `#C298C2` | Comments                                              |
-| Violet      | `#9750D1` | The one UI accent: buttons, badges, focus, active tab |
-| Ink Plum    | `#3B2243` | Dark editor background, Light text, neutral ramp      |
-| Sock Purple | `#5B3095` | Light types                                           |
-| Eye Teal    | `#22CED0` | Functions, success, added lines                       |
-| Deep Teal   | `#0F656E` | Light functions                                       |
+These swatches come from Vikkie's reference sheet. The theme adjusts them for light and dark backgrounds.
 
-From the art: Sweater Blue `#66A5E2` / `#B0C8F3` (info, parameters, properties), Crosshair Red `#ED0C3D` (errors, deletions, keywords), Bell Gold `#E1A665` (warnings, modified files, numbers), Implant Mint `#7B9E9A` (bracket pairs).
+| Swatch | Base color | Used for |
+| --- | --- | --- |
+| Fur White | `#F4EEFF` | Dark text, light editor background, neutral ramp |
+| Fur Purple | `#916CDB` | Selections |
+| Hair Yellow | `#F1E8B2` | Dark strings, search highlights |
+| Blush | `#D9C0BA` | Bracket pairs |
+| Mauve | `#C298C2` | Comments |
+| Violet | `#9750D1` | Buttons, badges, focus, active tabs |
+| Ink Plum | `#3B2243` | Dark editor background, light text, neutral ramp |
+| Sock Purple | `#5B3095` | Light types |
+| Eye Teal | `#22CED0` | Functions, success, added lines |
+| Deep Teal | `#0F656E` | Light functions |
+| Sweater Blue | `#66A5E2` / `#B0C8F3` | Info, parameters, properties |
+| Crosshair Red | `#ED0C3D` | Errors, deletions, keywords |
+| Bell Gold | `#E1A665` | Warnings, modified files, numbers |
+| Implant Mint | `#7B9E9A` | Bracket pairs |
 
-All UI colors are built as OKLCH ramps from these swatches. Body text and every colored terminal color meet WCAG AA (4.5:1); control edges and the keyboard focus ring meet 3:1. Syntax colors are tuned for color-blind readers (checked in simulated protanopia, deuteranopia and tritanopia), and comments are italic so they don't rely on color alone.
+The audit checks main and secondary text, syntax colors and colored terminal text against their default backgrounds. Each must reach a contrast ratio of 4.5:1. Input, checkbox and dropdown borders must reach 3:1, as must keyboard focus rings on selected rows. The themes use italics for comments.
 
 ### Dark
 
-#### Background Colors
+#### Background colors
 
-- Shell (Title Bar, Activity Bar, Status Bar): `#260F2D`
-- Surface (Side Bar, Panel, Tabs): `#2E1635`
+- Title bar, activity bar and status bar: `#260F2D`
+- Sidebar, panels and tabs: `#2E1635`
 - Editor: `#3B2243`
 - Widgets (Hover, Suggest, Menus): `#452D4E`
 - Border: `#4C3556`
 - Control Border (Inputs, Checkboxes): `#8A7A96`
 
-#### Text Colors
+#### Text colors
 
 - Main Text: `#F4EEFF`
 - Secondary Text: `#B7ACC4`
 - Muted Text (Line Numbers, Placeholders): `#81708E`
 
-#### Accent Colors
+#### Accent colors
 
 - Accent (Buttons, Badges): `#9750D1`
 - Accent Line (Active Tab, Cursor): `#B988E8`
@@ -60,14 +66,14 @@ All UI colors are built as OKLCH ramps from these swatches. Body text and every 
 - Selection: `#A76BDC5C` (with alpha)
 - Search Highlight: `#F1E8B2`
 
-#### Status Colors
+#### Status colors
 
 - Success / Added: `#22CED0`
 - Error / Deleted: `#FD7579`
 - Warning / Modified: `#E1A665`
 - Info: `#66A5E2`
 
-#### Syntax Highlighting Colors
+#### Syntax highlighting colors
 
 - Keyword, Operator, Regex & Escape: `#FD6C82`
 - Function: `#22CED0`
@@ -80,7 +86,7 @@ All UI colors are built as OKLCH ramps from these swatches. Body text and every 
 - Punctuation: `#BEB3CA`
 - Bracket Pairs: `#A8DDD7` `#DEA99C` `#C0B4D6` (repeating)
 
-#### Terminal Colors
+#### Terminal colors
 
 - ANSI Black: `#1F0925`
 - ANSI Red: `#FD7579`
@@ -93,35 +99,35 @@ All UI colors are built as OKLCH ramps from these swatches. Body text and every 
 
 ### Light
 
-#### Background Colors
+#### Background colors
 
-- Shell & Surface (Title Bar, Activity Bar, Status Bar, Side Bar, Panel, Tabs): `#E8E1F3`
+- Title bar, activity bar, status bar, sidebar, panels and tabs: `#E8E1F3`
 - Editor: `#F4EEFF`
 - Widgets (Hover, Suggest, Menus): `#FBF9FF`
 - Border: `#DBD3E7`
 - Control Border (Inputs, Checkboxes): `#8B7B98`
 
-#### Text Colors
+#### Text colors
 
 - Main Text: `#3B2243`
 - Secondary Text: `#634E6E`
 - Muted Text (Line Numbers, Placeholders): `#90809C`
 
-#### Accent Colors
+#### Accent colors
 
 - Accent (Buttons, Badges, Active Tab, Cursor): `#9750D1`
 - Accent Text & Focus Ring (Links, Matches, Keyboard Focus): `#7B43AB`
 - Selection: `#A76BDC47` (with alpha)
 - Search Highlight: `#E1A665` / `#F1E8B2` (with alpha)
 
-#### Status Colors
+#### Status colors
 
 - Success / Added: `#067072`
 - Error / Deleted: `#C30F32`
 - Warning / Modified: `#905806`
 - Info: `#1367AB`
 
-#### Syntax Highlighting Colors
+#### Syntax highlighting colors
 
 - Keyword, Operator, Regex & Escape: `#C71E44`
 - Function: `#0F656E`
@@ -134,7 +140,7 @@ All UI colors are built as OKLCH ramps from these swatches. Body text and every 
 - Punctuation: `#634E6E`
 - Bracket Pairs: `#1E514D` `#663A30` `#554967` (repeating)
 
-#### Terminal Colors
+#### Terminal colors
 
 - ANSI Black: `#3B2243`
 - ANSI Red: `#9F0526`
@@ -147,12 +153,31 @@ All UI colors are built as OKLCH ramps from these swatches. Body text and every 
 
 ## Development
 
-The theme files in `themes/` are generated. Edit `scripts/gen.mjs`, not the JSON.
+Edit the theme JSON files in `themes/` directly. Install development dependencies with `pnpm install`.
 
-- `npm run build` regenerates both themes
-- `npm run audit` checks contrast, focus rings, the one-accent rule, bracket colors and color-blind distinctness
+- `pnpm run audit` checks contrast, focus rings, accents, bracket colors, italic comments and syntax color separation.
+- `pnpm test` runs the audit's regression tests.
+- `pnpm build` creates `vikkie-theme-<version>.vsix` in the project root and runs the theme audit before packaging.
 
-`scripts/syntax-search.mjs` and `scripts/bracket-search.mjs` are the searches that picked the syntax and bracket colors. The `scripts/` folder isn't included in the published extension.
+The audit uses [Culori](https://culorijs.org/) for color calculations. It compares eight syntax colors in simulations of protanopia, deuteranopia and tritanopia. It multiplies each pair's OKLab distance by 100 and requires a result of at least 3.8.
+
+Use `pnpm run audit` to check the themes. The shorter `pnpm audit` command checks dependencies for vulnerabilities.
+
+## Publishing an update
+
+1. Increase `version` in `package.json` above the published version and update `CHANGELOG.md`. Keep the existing `name` and `publisher`.
+2. Install dependencies, run the tests and package the extension:
+
+   ```sh
+   pnpm install --frozen-lockfile
+   pnpm test
+   pnpm build
+   ```
+
+3. In VS Code's Extensions view, open the **…** menu and choose **Install from VSIX…**. Install the package and check both themes.
+4. Open the [publisher dashboard](https://marketplace.visualstudio.com/manage/publishers/atomicnumberphi) and find **Vikkie!!! Theme**. Choose **Update** from its **…** menu and upload the `.vsix`.
+
+Packaging runs the theme audit before creating the `.vsix`. The package excludes audit scripts and development dependencies.
 
 ## License
 

@@ -2,3 +2,10 @@
 .vscode-test/**
 .gitignore
 vsc-extension-quickstart.md
+scripts/**
+node_modules/**
+.DS_Store
+**/.DS_Store
+*.bak
+*.vsix
+pnpm-lock.yaml

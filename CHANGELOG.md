@@ -6,22 +6,16 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 
 ## 2.0.0
 
-- Support for VS Code's modern UI: shell, floating surfaces, connected/pill editor tabs, modern Activity Bar, and frosted-glass overlays
-- New colors for the Agents window, Copilot Chat, inline chat, Next Edit Suggestions (`inlineEdit.*`), markdown alerts, SCM graph, testing and coverage, notebooks, and merge/diff editors
-- Themed the rest of the workbench (menus, notifications, quick input, settings, debug, peek views) so no default grays or blues leak through
-- Syntax colors reworked for clearer contrast: strings use Hair Yellow, types use Fur Purple, and functions use Eye Teal
-- Enabled semantic highlighting, with `semanticTokenColors` for TypeScript, Python, Rust and similar languages
-- Every syntax color reaches at least 4.5:1 (WCAG AA) contrast against the editor background in both variants
-- One UI accent (Violet) for buttons, badges, focus, links and active states; yellow and teal now carry only search highlights and status
-- Input, checkbox and dropdown borders reach 3:1 contrast; widget borders are tinted neutrals instead of saturated purple
-- "Modified" is Bell Gold everywhere (gutter, explorer, tabs, settings)
-- Syntax colors re-tuned for color-blind readers: in simulated protanopia, deuteranopia and tritanopia the closest pair improved from ΔE 1.6 to 3.9. Comments are now italic so they don't rely on color alone, and regex/escapes share the keyword color
-- Light theme frame uses the side-bar lavender instead of violet
-- Bracket pairs use three soft tints of Implant Mint, Blush and Fur White, repeating, so brackets read as punctuation instead of six more colors competing with the syntax
-- Keyboard focus ring reaches 3:1 even on a selected row
-- Terminal: every colored ANSI entry reaches 4.5:1 (light bright colors were 3:1); light numbers now use Bell Gold's hue
-- The theme generator and audit live in `scripts/` (`npm run build`, `npm run audit`); `scripts/` and local tooling files are excluded from the published extension
-- Updated screenshots and color summary
+- Updated the dark and light palettes, screenshots and color documentation.
+- Themed menus, tabs, floating panels and overlays for VS Code's modern UI.
+- Added colors for Agents and Copilot Chat, inline suggestions, Markdown alerts, source control graphs, test results and coverage, notebooks and diff/merge editors.
+- Enabled semantic highlighting and changed the syntax palette. Strings use yellow, types use purple and functions use teal.
+- Buttons, badges, links and focus rings now use Violet. Bell Gold marks modified files in the gutter, Explorer and tabs.
+- Changed the light theme's title bar, sidebar and status bar to lavender.
+- Syntax colors and colored terminal text reach at least 4.5:1 contrast against their default backgrounds. Input, checkbox and dropdown borders and keyboard focus rings reach 3:1, including focus rings on selected rows.
+- Improved syntax color separation in simulations of protanopia, deuteranopia and tritanopia. Comments are italic, and regular expressions and escape sequences share the keyword color.
+- Bracket pairs repeat three colors based on Implant Mint, Blush and Fur White.
+- Added a Culori-based audit and regression tests, run with pnpm. Packaging runs the audit before creating the VSIX. The theme JSON can be edited directly, and the package excludes audit scripts and development dependencies.
 
 ## 1.0.3
 
